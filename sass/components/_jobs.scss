@@ -1,0 +1,33 @@
+.jobs {
+    margin-top: -94px;
+
+    &__section-title {
+        font-size: 36px;
+        text-align: center;
+    }
+    &__box {
+        width: 370px;
+        height: 294px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    &__img {
+        position: relative;
+    }
+    &__title {
+        position: absolute;
+        background: rgba(47, 48, 58, 0.8);
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        bottom: 0;
+        width: 370px;
+        text-align: center;
+        padding: 27px 0;
+    }
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+svg,
+img {
+    vertical-align: middle;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding: 94px 0;
+}

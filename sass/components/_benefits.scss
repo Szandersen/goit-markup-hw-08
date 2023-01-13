@@ -1,0 +1,32 @@
+.benefits {
+    &__list {
+        display: flex;
+        gap: 30px;
+        letter-spacing: 0.03em;
+        margin: 30px 0px;
+    }
+    &__list-item {
+        display: inline-block;
+    }
+    &__icon {
+        background-color: $button-background;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        color: $color-black;
+        font-size: 14px;
+        line-height: 1.14;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &__article {
+        color: $color-lightgrey;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}

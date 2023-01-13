@@ -1,0 +1,63 @@
+.team {
+    background-color: #f5f4fa;
+    text-align: center;
+    padding: 94px 0;
+
+    &__section-title {
+        font-size: 36px;
+        padding-bottom: 50px;
+    }
+    &__list {
+        gap: 30px;
+        display: flex;
+    }
+    &__list-item {
+        background-color: $color-white;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__list-item:last-child {
+        margin-right: 0;
+    }
+    &__member {
+        margin-bottom: 30px;
+    }
+    &__member-name {
+        color: $color-black;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        margin: 30px 0px 10px 0px;
+    }
+    &__member-job {
+        color: $color-grey;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
+    }
+    &__member-socials {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 6px;
+    }
+    &__member-socials-link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        fill: $color-grey;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__member-socials-link:hover,
+    &__member-socials-link:focus {
+        fill: $color-white;
+        background-color: $color-blue;
+    }
+}
