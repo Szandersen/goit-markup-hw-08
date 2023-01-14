@@ -4,6 +4,7 @@
 
     &__container {
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
     &__contact-list {
@@ -31,12 +32,12 @@
     //     transition-duration: 250ms;
     //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     // }
-    // &__contact-list-item:hover,
-    // &__contact-list-item:focus {
-    //     color: $color-blue;
-    //     transition-duration: 250ms;
-    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    // }
+    &__contact-list-item:hover,
+    &__contact-list-item:focus {
+        color: $color-blue;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     &__social {
         margin-left: 70px;
     }
@@ -76,6 +77,7 @@
     }
     &__mail-sub {
         display: flex;
+        flex-direction: column;
         gap: 12px;
     }
     &__newsletter-title {
@@ -92,7 +94,7 @@
         border-radius: 4px;
         border-color: rgba(255, 255, 255, 0.3);
         color: rgba(255, 255, 255, 0.6);
-        width: 358px;
+        max-width: 358px;
         height: 50px;
         padding-left: 16px;
     }

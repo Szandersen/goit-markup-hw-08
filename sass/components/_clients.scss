@@ -9,6 +9,7 @@
     &__list {
         gap: 30px;
         display: flex;
+        flex-direction: column;
     }
     &__list-item {
         border: 1px solid #afb1b8;

@@ -18,7 +18,10 @@
         font-weight: 900;
         line-height: 1.4em;
         letter-spacing: 0.06em;
-        margin: 0 252px 30px;
+        // margin: 0 252px 30px;
+        @include desktop {
+            margin: 0 252px 30px;
+        }
     }
     &__button {
         background-color: $color-blue;

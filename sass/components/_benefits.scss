@@ -1,6 +1,7 @@
 .benefits {
     &__list {
         display: flex;
+        flex-direction: column;
         gap: 30px;
         letter-spacing: 0.03em;
         margin: 30px 0px;

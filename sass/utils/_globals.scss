@@ -16,9 +16,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    width: 1200px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
 }
 .section {
     padding: 94px 0;

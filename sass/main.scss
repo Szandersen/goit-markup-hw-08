@@ -1,5 +1,7 @@
 @use './utils/vars' as *;
-@use './utils/globals' as *;
+@use './utils/mixins' as *;
+@import './utils/globals';
+@import './components/mobile-menu';
 @import './components/header';
 @import './components/logo';
 @import './components/hero';
