@@ -80,15 +80,28 @@
 @include tablet {
     .hero {
         padding-top: 80px;
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/tablet/HeaderTabletImg-1x.jpg);
     }
 }
 @include desktop {
     .hero {
         height: 600px;
         padding-top: 80px;
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/desktop/HeaderDesktopImg-1x.jpg);
+        justify-content: center;
+        align-items: center;
     }
     .hero__title {
         font-size: 44px;
         line-height: 1.4;
+        align-items: center;
     }
 }
