@@ -6,9 +6,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+    &__adress {
+        margin-bottom: 60px;
     }
     &__contact-list {
         padding-top: 20px;
+        padding-left: 0px;
     }
     &__contact-list-address {
         color: $color-white;
@@ -39,7 +44,9 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__social {
-        margin-left: 70px;
+        // margin-left: 70px;
+        margin-left: 0;
+        margin-bottom: 60px;
     }
     &__social-title {
         font-weight: 700;
@@ -48,7 +55,8 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $color-white;
-        margin: 12px 0 20px;
+        // margin: 12px 0 20px;
+        margin-bottom: 20px;
     }
     &__social-list {
         display: flex;
@@ -73,11 +81,14 @@
     }
 
     &__newsletter {
-        margin-left: 78px;
+        // margin-left: 78px;
+        margin-left: 0;
     }
     &__mail-sub {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 12px;
     }
     &__newsletter-title {
@@ -90,13 +101,21 @@
         margin: 12px 0 20px;
     }
     &__subscription-form {
-        background-color: transparent;
-        border-radius: 4px;
-        border-color: rgba(255, 255, 255, 0.3);
+        // background-color: transparent;
+        // border-radius: 4px;
+        // border-color: rgba(255, 255, 255, 0.3);
         color: rgba(255, 255, 255, 0.6);
-        max-width: 358px;
+        // max-width: 358px;
+        // height: 50px;
+        // padding-left: 16px;
+        width: calc(100vw - 30px);
+        max-width: 450px;
         height: 50px;
-        padding-left: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: transparent;
+        padding: 15px 16px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     }
     &__newsletter-button {
         width: 200px;
@@ -125,5 +144,37 @@
     }
     &__mail-underline {
         text-decoration: underline;
+    }
+}
+@include tablet {
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer__subscription-form {
+        width: 450px;
+    }
+}
+@include desktop {
+    .footer__container {
+        flex-direction: row;
+        text-align: left;
+    }
+    .footer__address {
+        margin-bottom: 0;
+    }
+    .footer__social {
+        margin-left: 70px;
+        margin-bottom: 0;
+    }
+    .footer__newsletter {
+        margin-left: 78px;
+    }
+    .footer__mail-sub {
+        flex-direction: row;
+    }
+    .footer__subscription-form {
+        width: 358px;
     }
 }

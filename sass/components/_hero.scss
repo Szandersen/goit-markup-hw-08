@@ -4,42 +4,52 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
-        url('../img/mobile/HeaderMobileImg-1x.jpg');
-        @include tablet {
-            background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url('../img/tablet/HeaderTabletImg-1x.jpg');
-        }
-        @include desktop {
-            background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url('../img/desktop/HeaderDesktopImg-1x.jpg');
-        }
-    
+        url(../img/mobile/HeaderMobileImg-1x.jpg);
+    // @include tablet {
+    //     background-image: linear-gradient(
+    //             rgba(47, 48, 58, 0.4),
+    //             rgba(47, 48, 58, 0.4)
+    //         ),
+    //         url(../img/tablet/HeaderTabletImg-1x.jpg);
+    // }
+    // @include desktop {
+    //     background-image: linear-gradient(
+    //             rgba(47, 48, 58, 0.4),
+    //             rgba(47, 48, 58, 0.4)
+    //         ),
+    //         url(../img/desktop/HeaderDesktopImg-1x.jpg);
+    // }
+
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
     // padding-top: 200px;
     // padding-bottom: 200px;
     display: flex;
     text-align: center;
     justify-content: center;
 
-
+    &__container {
+        text-align: center;
+    }
     &__title {
         color: $color-white;
         text-transform: uppercase;
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
-        line-height: 1.4em;
+        line-height: 1.6;
         letter-spacing: 0.06em;
-        // margin: 0 252px 30px;
-        @include desktop {
-            margin: 0 252px 30px;
-        }
+        margin-bottom: 30px;
+        // text-transform: uppercase;
+        // font-size: 44px;
+        // font-weight: 900;
+        // line-height: 1.4em;
+        // letter-spacing: 0.06em;
+        // // margin: 0 252px 30px;
+        // @include desktop {
+        //     margin: 0 252px 30px;
+        // }
     }
     &__button {
         background-color: $color-blue;
@@ -54,5 +64,31 @@
         cursor: pointer;
         width: 200px;
         height: 50px;
+    }
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/mobile/HeaderMobileImg-2x.jpg);
+    }
+}
+@include tablet {
+    .hero {
+        padding-top: 80px;
+    }
+}
+@include desktop {
+    .hero {
+        height: 600px;
+        padding-top: 80px;
+    }
+    .hero__title {
+        font-size: 44px;
+        line-height: 1.4;
     }
 }

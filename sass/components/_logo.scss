@@ -12,3 +12,8 @@
         color: $color-white;
     }
 }
+@include desktop {
+    .logo {
+        margin-right: 93px;
+    }
+}
