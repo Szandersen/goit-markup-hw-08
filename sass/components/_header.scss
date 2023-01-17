@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 83px;
     }
     &__wrapper {
         display: none;
@@ -58,6 +59,7 @@
         height: 4px;
         background-color: $color-blue;
         border-radius: 2px;
+        margin-top: 4px;
     }
     &__contact {
         display: flex;
@@ -99,5 +101,15 @@
         @include tablet {
             display: none;
         }
+    }
+}
+@include tablet {
+    .header__container {
+        padding: 20px 15px;
+    }
+}
+@include desktop {
+    .header__container {
+        padding: 24px 15px 25px 15px;
     }
 }

@@ -12,11 +12,7 @@
         color: $color-white;
     }
 }
-@include tablet {
-    .logo {
-        margin-right: 83px;
-    }
-}
+
 @include desktop {
     .logo {
         margin-right: 93px;

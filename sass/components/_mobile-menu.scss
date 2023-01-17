@@ -31,7 +31,12 @@
         position: absolute;
         top: 16px;
         right: 16px;
-        color: $color-white;
+        color: $color-black;
+        background-color: transparent;
+        border: none;
+    }
+    &__close-btn:hover {
+        color: $color-blue;
     }
 
     &__list {

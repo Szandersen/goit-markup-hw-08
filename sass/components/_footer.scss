@@ -57,6 +57,7 @@
         text-transform: uppercase;
         color: $color-white;
         // margin: 12px 0 20px;
+        margin-top: 60px;
         margin-bottom: 20px;
     }
     &__social-list {
@@ -156,6 +157,9 @@
     }
     .footer__subscription-form {
         width: 450px;
+    }
+    .footer__social-title {
+        margin-top: 0px;
     }
 }
 @include desktop {
