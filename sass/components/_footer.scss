@@ -10,6 +10,7 @@
     }
     &__adress {
         margin-bottom: 60px;
+        display: block;
     }
     &__contact-list {
         padding-top: 20px;
@@ -83,6 +84,7 @@
     &__newsletter {
         // margin-left: 78px;
         margin-left: 0;
+        margin-top: 60px;
     }
     &__mail-sub {
         display: flex;
@@ -160,6 +162,7 @@
     .footer__container {
         flex-direction: row;
         text-align: left;
+        align-items: baseline;
     }
     .footer__address {
         margin-bottom: 0;
@@ -170,6 +173,7 @@
     }
     .footer__newsletter {
         margin-left: 78px;
+        margin-top: 0px;
     }
     .footer__mail-sub {
         flex-direction: row;

@@ -17,10 +17,13 @@
 }
 .modal {
     position: absolute;
-    width: 528px;
+    max-width: 450px;
     min-height: 581px;
     background-color: $color-white;
     transition: transform 1000ms ease;
+    @include desktop {
+        max-width: 528px;
+    }
 
     &__close-button {
         position: absolute;
@@ -43,10 +46,10 @@
     }
     &__name-title {
         font-size: 20px;
-        line-height: 23px;
+        line-height: 1.5;
         color: $color-black;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 12px;
     }
     &__name-field {
         display: block;
@@ -55,10 +58,13 @@
         font-size: 12px;
         line-height: 14px;
         color: $color-grey;
+        margin-top: 12px;
         margin-bottom: 4px;
     }
     &__form-area {
-        width: 448px;
+        // width: 448px;
+        display: block;
+        width: 100%;
         height: 40px;
         margin-bottom: 10px;
         border: solid 1px;
@@ -81,7 +87,8 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__form-area-comment {
-        width: 448px;
+        display: block;
+        width: 100%;
         height: 120px;
         margin-bottom: 20px;
         border: solid 1px;
@@ -102,7 +109,7 @@
     &__form-icon {
         position: absolute;
         left: 55px;
-        margin-top: 20px;
+        margin-top: -30px;
         transform: translateY(-50%);
     }
     &__form-icon:hover,
